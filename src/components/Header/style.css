@@ -1,0 +1,25 @@
+.header-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: var(--font-color);
+}
+
+.header-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1rem;
+    font-size: 1.2em;
+}
+    
+.header-title p {
+    font-size: .85em;
+    color: var(--light-teal);
+}
+
+.header-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem;
+}
