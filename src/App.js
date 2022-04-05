@@ -1,8 +1,13 @@
 import './App.css';
+import { About, Contact, Header, Projects } from './components';
 
 function App() {
   return (
-    <div className="App">
+    <div className="app-main">
+      <Header />
+      <About />
+      <Projects />
+      <Contact />
     </div>
   );
 }
