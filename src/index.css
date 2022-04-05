@@ -4,4 +4,5 @@
     --dark-blue: #240090;
     --light-purple: #190061;
     --dark-purple: #0C0032;
+    --gradient: linear-gradient(to right, #3500d3, #3200c6, #2f00b9, #2b00ac, #2800a0, #260097, #23008d, #210084, #1f007b, #1d0072, #1b006a, #190061);
 }
