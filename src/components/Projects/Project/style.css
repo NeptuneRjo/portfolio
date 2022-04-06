@@ -1,0 +1,58 @@
+.project-main {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.project-item {
+    margin: 1rem 0;
+    background: var(--light-gray);
+}
+
+.project-item h4 {
+    text-align: center;
+    color: var(--light-teal);
+    margin: 1rem;
+}
+
+.project-item p {
+    background: transparent;
+    color: var(--font-color);
+    margin: 0 2rem;
+}
+
+.project-images {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+    background: transparent;
+}
+
+.image-desktop {
+    display: none;
+}
+
+.image-mobile {
+    display: block;
+    width: 80%;
+}
+
+.project-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: transparent;
+}
+
+.project-links a, .project-links img {
+    background: transparent;
+    text-decoration: none;
+    color: var(--dark-teal);
+}
+
+.project-link-gh {
+    display: flex;
+    gap: .5rem;
+    background: transparent;
+}

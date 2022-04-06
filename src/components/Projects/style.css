@@ -1,0 +1,14 @@
+.projects-header {
+    text-align: center;
+    color: var(--font-color);
+    margin-top: 10rem;
+    font-size: 1.2em;
+}
+
+.projects-header span {
+    color: var(--light-teal);
+}
+
+.projects-content {
+    padding: 3rem 0;
+}
