@@ -4,40 +4,37 @@
             "name": "Cryptoverse",
             "tools": "React, Redux, Millify, RapidAPI",
             "description": "Cryptoverse is a fully responsive, dynamic web application that uses multiple APIs to create a real-time database of cryptocurrencies and crypto-related news.",
-            "desktop": "../../assets/cryptoverse-desktop.png",
-            "mobile": "../../assets/cryptoverse-mobile.png",
-            "links": [ 
+            "desktop": "https://i.imgur.com/SIdKex7.png",
+            "mobile": "https://i.imgur.com/DBTjPdR.png",
+            "links": 
                 {
                     "github": "https://github.com/NeptuneRjo/cryptoverse",
                     "live": "https://neptunerjo.github.io/cryptoverse/"
                 }
-            ]
         },
         {
             "name": "ECommerce",
             "tools": "React, CommerceJS API, MaterialUI",
             "description": "ECommerce is a web store that utilizes CommerceJS's API service to supply products to the storefront. Completely responsive, and the product page can be changed through CommerceJS.",
-            "desktop": "../../assets/ecommerce-desktop.png",
-            "mobile": "../../assets/ecommerce-mobile.png",
-            "links": [ 
+            "desktop": "https://i.imgur.com/vRNXmbd.png",
+            "mobile": "https://i.imgur.com/TedapRw.png",
+            "links": 
                 {
                     "github": "https://github.com/NeptuneRjo/e-commerce",
                     "live": "https://neptunerjo.github.io/e-commerce/"
                 }
-            ]
         },
         {
             "name": "Space Tourism",
             "tools": "React, JSON, Prettier",
             "description": "Space Tourism is a fully responsive website about a space trip for tourists. Relying on JSON data for most of the content, Space Tourism's design was converted from a Figma file.",
-            "desktop": "../../assets/space-desktop.png",
-            "mobile": "../../assets/space-mobile.png",
-            "links": [ 
+            "desktop": "https://i.imgur.com/X5Crw7J.png",
+            "mobile": "https://i.imgur.com/soO0NhH.png",
+            "links": 
                 {
                     "github": "https://github.com/NeptuneRjo/space-tourism",
                     "live": "https://neptunerjo.github.io/space-tourism/"
                 }
-            ]
         }
     ]
 }
