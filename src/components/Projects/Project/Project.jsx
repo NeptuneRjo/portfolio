@@ -17,6 +17,8 @@ const Project = ({ project, id }) => {
       <div className='project-item' id={`project-${id}`}>
         <h4>{project.name}</h4>
         <p>{project.description}</p>
+        <h5>Tools used:</h5>
+        <p className='tools'>{project.tools}</p>
         <div className="project-images">
           <img className='image-desktop' src={project.desktop} alt='preview of the desktop design' />
           <img className='image-mobile' src={project.mobile} alt='preview of the mobile design' />

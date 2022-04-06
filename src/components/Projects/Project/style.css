@@ -15,6 +15,16 @@
     margin: 1rem;
 }
 
+.project-item h5 {
+    text-align: center;
+    background: transparent;
+    color: var(--font-color);
+    margin: 1rem;
+}
+.tools {
+    text-align: center;
+}
+
 .project-item p {
     background: transparent;
     color: var(--font-color);
