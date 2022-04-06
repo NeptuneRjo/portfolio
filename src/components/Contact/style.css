@@ -1,0 +1,58 @@
+.contact-main {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    padding-top: 0;
+    margin-bottom: 3rem;
+
+}
+
+.contact-content h4{
+    text-align: center;
+    color: var(--font-color);
+    font-size: 1.2em;
+}
+
+.contact-content span {
+    color: var(--light-teal);
+}
+
+
+#name, #email, #message {
+    width: 250px;
+    height: 35px;
+    resize: none;
+    margin-top: 1rem;
+}
+
+#message {
+    height: 100px;
+}
+
+input, textarea, button {
+    border: solid 1px white;
+    color: var(--font-color);
+    background: var(--light-gray);
+    padding-left: .5rem;
+    font-weight: bold;
+}
+
+button {
+    margin: 1rem 0;
+    padding: .5rem;
+    background: none;
+    border: solid 1px var(--dark-teal);
+}
+
+input:focus, textarea:focus {
+    border: solid 1px var(--light-teal);
+    outline: none;
+}
+
+button:hover {
+    cursor: pointer;
+    border: solid 1px var(--light-teal)
+}
+
+
+  
