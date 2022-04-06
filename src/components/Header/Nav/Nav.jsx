@@ -32,13 +32,23 @@ const Nav = () => {
       <div className={`nav-mobile-menu ${toggleMenu}`}>
         <div className="nav-mobile-items slide-bottom">
           <div className="nav-mobile-item">
-            <p><a href='#about'>About</a></p>
+            <p>
+              <a href='#about' onClick={() => setToggleMenu(false)}>
+                About
+              </a>
+            </p>
           </div>
           <div className="nav-mobile-item">
-            <p><a href='#projects'>Projects</a></p>
+            <p>
+              <a href='#projects' onClick={() => setToggleMenu(false)}>Projects
+              </a>
+            </p>
           </div>
           <div className="nav-mobile-item">
-            <p><a href='#contact'>Contact</a></p>
+            <p>
+              <a href='#contact' onClick={() => setToggleMenu(false)}>Contact
+              </a>
+            </p>
           </div>
         </div>
       </div>
