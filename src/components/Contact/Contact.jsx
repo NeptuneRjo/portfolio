@@ -23,7 +23,7 @@ const Contact = () => {
   
 
   return (
-    <div className="contact-main">
+    <div className="contact-main" id='contact'>
       <div className="contact-content">
         <h4><span>Contact</span> Me</h4>
         <form 
