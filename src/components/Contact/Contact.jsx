@@ -14,10 +14,10 @@ const Contact = () => {
 
   if (submitted) {
     return (
-      <>
+      <div className='form-submitted'>
         <h4>Thank you!</h4>
         <p>We'll be in touch soon.</p>
-      </>
+      </div>
     );
   }
   

@@ -54,5 +54,14 @@ button:hover {
     border: solid 1px var(--light-teal)
 }
 
+.form-submitted {
+    display: flex;
+    flex-direction: column;
+    color: var(--font-color);
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+}
+
 
   
