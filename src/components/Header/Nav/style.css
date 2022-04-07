@@ -67,3 +67,37 @@
     }
   }
   
+  @media screen and (min-width: 1024px) {
+    .nav-main {
+      width: 100%;
+      flex-direction: row;
+    }
+    
+    .nav-desktop {
+      display: flex;
+      flex-direction: row;
+      height: 100%;
+      width: 100%;
+    }
+
+    .nav-desktop-items {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+      gap: 4rem;
+      padding-right: 1.2rem;
+    }
+
+    .nav-mobile {
+      display: none;
+    }
+
+    .nav-desktop-item a, .nav-desktop-item a:visited {
+      text-decoration: none;
+    }
+
+    .nav-desktop-item a:hover {
+      color: var(--light-teal);
+    }
+
+  }

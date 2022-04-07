@@ -18,3 +18,9 @@
         font-size: 1.3em;
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .projects-header {
+        font-size: 1.4em;
+    }
+}

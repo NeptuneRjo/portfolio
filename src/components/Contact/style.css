@@ -4,7 +4,7 @@
     padding: 1rem;
     padding-top: 0;
     margin-bottom: 3rem;
-
+    margin-top: 10rem;
 }
 
 .contact-content h4{
@@ -70,6 +70,16 @@ button:hover {
 
     #name, #email, #message {
         width: 350px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .contact-content h4 {
+        font-size: 1.4em;
+    }
+
+    #name, #email, #message {
+        width: 450px;
     }
 }
 

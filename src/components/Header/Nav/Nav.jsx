@@ -14,6 +14,19 @@ const Nav = () => {
   return (
     <div className="nav-main">
       <div className="nav-desktop">
+        <div className="nav-desktop-items">
+          <div className="nav-desktop-item">
+            <p><a href="#about">About</a></p>
+          </div>
+          <div className="nav-desktop-item">
+            <p>
+              <a href="#projects">Projects</a>
+            </p>
+          </div>
+          <div className="nav-desktop-item">
+            <p><a href="#contact">Contact</a></p>
+          </div>
+        </div>
       </div>
       <div className="nav-mobile">
         {toggleMenu
