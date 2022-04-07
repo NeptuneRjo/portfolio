@@ -55,8 +55,9 @@
 
 .project-links {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+    gap: 2rem;
     background: transparent;
     width: 80%;
     padding: 1rem 0;
@@ -102,6 +103,7 @@
 
     .project-links {
         width: 90%;
+        gap: 3rem;
     }
 
     .project-links a {
