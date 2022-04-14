@@ -44,39 +44,39 @@ const Menu = () => {
             <div className={`menu-content ${menuClasses.join(' ')}`}>
               <div className="menu-desktop"></div>
               <div className="menu-mobile">
-              {toggleMenu
-                ? <RiCloseLine 
-                    color='#7293B4' 
-                    size={27} 
-                    onClick={() => setToggleMenu(false)}
-                  />
-                : <RiMenu3Line
-                    color='#7293B4'
-                    size={27}
-                    onClick={() => setToggleMenu(true)}
-                  />            
-              }
-              <div className={`menu-mobile-items ${toggleMenu}`}>
-                <div className="menu-mobile-item">
-                  <p>
-                    <a href='#about' onClick={() => setToggleMenu(false)}>
-                      About
-                    </a>
-                  </p>
+                {toggleMenu
+                  ? <RiCloseLine 
+                      color='#7293B4' 
+                      size={27} 
+                      onClick={() => setToggleMenu(false)}
+                    />
+                  : <RiMenu3Line
+                      color='#7293B4'
+                      size={27}
+                      onClick={() => setToggleMenu(true)}
+                    />            
+                }
+                <div className={`menu-mobile-items ${toggleMenu}`}>
+                  <div className="menu-mobile-item">
+                    <p>
+                      <a href='#about' onClick={() => setToggleMenu(false)}>
+                        About
+                      </a>
+                    </p>
+                  </div>
+                  <div className="menu-mobile-item">
+                    <p>
+                      <a href='#projects' onClick={() => setToggleMenu(false)}>Projects
+                      </a>
+                    </p>
+                  </div>
+                  <div className="menu-mobile-item">
+                    <p>
+                      <a href='#contact' onClick={() => setToggleMenu(false)}>Contact
+                      </a>
+                    </p>
+                  </div>
                 </div>
-                <div className="menu-mobile-item">
-                  <p>
-                    <a href='#projects' onClick={() => setToggleMenu(false)}>Projects
-                    </a>
-                  </p>
-                </div>
-                <div className="menu-mobile-item">
-                  <p>
-                    <a href='#contact' onClick={() => setToggleMenu(false)}>Contact
-                    </a>
-                  </p>
-                </div>
-              </div>
               </div>
             </div>
           }
