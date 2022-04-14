@@ -46,12 +46,12 @@ const Menu = () => {
               <div className="menu-mobile">
                 {toggleMenu
                   ? <RiCloseLine 
-                      color='#7293B4' 
+                      color='#47ABE0' 
                       size={27} 
                       onClick={() => setToggleMenu(false)}
                     />
                   : <RiMenu3Line
-                      color='#7293B4'
+                      color='#47ABE0'
                       size={27}
                       onClick={() => setToggleMenu(true)}
                     />            

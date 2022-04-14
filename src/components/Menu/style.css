@@ -8,7 +8,7 @@
     justify-content: flex-end;
     align-items: center;
     background: var(--background-color);   
-    box-shadow: 0 4px 15px -5px rgba(0,0,0,.6); 
+    box-shadow: 0 4px 15px -5px rgba(0,0,0,.4); 
 }
 
 .menu-desktop {
