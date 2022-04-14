@@ -1,0 +1,104 @@
+.menu-content {
+    z-index: 1;
+    width: 100%;
+    color: white;
+    height: 40px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: var(--background-color);   
+    box-shadow: 0 4px 15px -5px rgba(0,0,0,.6); 
+}
+
+.menu-desktop {
+    display: none;
+}
+
+.menu-mobile {
+    z-index: inherit;
+    background: transparent;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+}
+
+.menu-mobile svg {
+    background: transparent;
+    padding-right: 1rem;
+}
+
+.menu-mobile-items.false {
+    display: none;
+}
+
+.menu-mobile-items.true {
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    top: 40px;
+
+    padding: 1rem;
+    background: var(--background-color);
+
+	-webkit-animation: scale-up-ver-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	animation: scale-up-ver-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.menu-mobile-item {
+    margin: .25rem 0;
+}
+
+.menu-mobile-item, p, a {
+    background: transparent;
+}
+
+.menu-mobile-item a, a:visited {
+    text-decoration: none;
+    color: var(--contrast-color);
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.scrolled {
+    position: fixed;
+    left: 0;
+
+	-webkit-animation: scale-up-ver-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	animation: scale-up-ver-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes scale-up-ver-top {
+    0% {
+      -webkit-transform: scaleY(0.4);
+              transform: scaleY(0.4);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+    }
+    100% {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+    }
+  }
+  @keyframes scale-up-ver-top {
+    0% {
+      -webkit-transform: scaleY(0.4);
+              transform: scaleY(0.4);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+    }
+    100% {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+    }
+  }
+
+  
