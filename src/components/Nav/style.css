@@ -34,7 +34,6 @@
   position: absolute;
   top: 3rem;
   padding: 1rem;
-  /* background: var(--background-color); */
   background: transparent;
 
   -webkit-animation: scale-up-ver-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
@@ -54,6 +53,10 @@
 
 .nav-mobile-item {
   margin: .25rem 0;
+}
+
+.nav-mobile svg {
+  background: transparent;
 }
 
 @-webkit-keyframes scale-up-ver-top {
