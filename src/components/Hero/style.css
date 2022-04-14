@@ -24,6 +24,10 @@
     margin-bottom: 3rem;
 }
 
+.header-text h4, span {
+    background: transparent;
+}
+
 .header-text span {
     color: var(--contrast-color);
 }
