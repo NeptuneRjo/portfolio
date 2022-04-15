@@ -37,10 +37,10 @@ const About = () => {
           </div>
         </div>
         <div className="about-more">
-          <div className="about-contact">
+          <div className="about-contact blue__button">
             <a href="#contact">HIRE ME</a>
           </div>
-          <div className="about-cv">
+          <div className="about-cv white__button">
             <a href=''>DOWNLOAD CV</a>
           </div>
         </div>
