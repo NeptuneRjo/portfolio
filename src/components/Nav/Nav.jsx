@@ -6,6 +6,8 @@ import {
   RiCloseLine
 } from 'react-icons/ri';
 
+import Logo from '../../assets/Logo';
+
 
 const Nav = () => {
 
@@ -13,6 +15,7 @@ const Nav = () => {
 
   return (
     <div className="nav-main">
+      <Logo />
       <div className="nav-desktop">
         <div className="nav-desktop-items">
           <div className="nav-desktop-item">
