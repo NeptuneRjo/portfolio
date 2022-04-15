@@ -5,7 +5,7 @@
     height: 40px;
 
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     background: var(--background-color);   
     box-shadow: 0 4px 15px -5px rgba(0,0,0,.4); 
@@ -23,7 +23,6 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-end;
-
 }
 
 .menu-mobile svg {

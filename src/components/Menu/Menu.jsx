@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './style.css';
 
 import { 
@@ -7,7 +7,8 @@ import {
 } from 'react-icons/ri';
 
 import { Scroll } from 'react-fns'
-import { useEffect } from 'react';
+
+import Logo from '../../assets/Logo';
 
 
 const Menu = () => {
@@ -42,6 +43,7 @@ const Menu = () => {
           {
             y >= 460 &&
             <div className={`menu-content ${menuClasses.join(' ')}`}>
+              <Logo />
               <div className="menu-desktop"></div>
               <div className="menu-mobile">
                 {toggleMenu
