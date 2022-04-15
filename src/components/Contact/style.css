@@ -1,87 +1,96 @@
 .contact-main {
     display: flex;
-    justify-content: center;
-    padding: 1rem;
-    padding-top: 0;
+    flex-direction: column;
+
+    margin: 5rem 0;
+    color: var(--font-color);
     margin-bottom: 3rem;
-    margin-top: 10rem;
 }
 
-.contact-content h4{
-    text-align: center;
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 1rem;
+}
+
+.contact-content h4 {
+    font-size: 1.3em;
+    font-weight: 600;
+    padding: .5rem 0;
+    color: var(--contrast-color);
+}
+
+.contact-form-item {
+    display: flex;
+    flex-direction: column;
+    margin: .25rem 0;
+}
+
+label {
+    margin-bottom: .25rem;
+}
+
+input, textarea {
+    height: 30px;
+    border: transparent;
+    border-bottom: solid 1px var(--font-color);
     color: var(--font-color);
-    font-size: 1.2em;
+    padding: 5px;
 }
 
-.contact-content span {
-    color: var(--light-teal);
-}
-
-
-#name, #email, #message {
-    width: 250px;
-    height: 35px;
-    resize: none;
-    margin-top: 1rem;
-}
-
-#message {
-    height: 100px;
-}
-
-input, textarea, button {
-    border: solid 1px white;
-    color: var(--font-color);
-    background: var(--light-gray);
-    padding-left: .5rem;
-    font-weight: bold;
-}
-
-button {
-    margin: 1rem 0;
-    padding: .5rem;
-    background: none;
-    border: solid 1px var(--dark-teal);
+textarea {
+    height: 90px;
 }
 
 input:focus, textarea:focus {
-    border: solid 1px var(--light-teal);
+    border: transparent;
+    border-bottom: solid 1px var(--contrast-color);
     outline: none;
 }
 
-button:hover {
+#submit {
     cursor: pointer;
-    border: solid 1px var(--light-teal)
+    margin: 1.5rem 0;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 0;
+    margin-bottom: 0;
+}
+
+.contact-info-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info-item {
+    display: flex;
+    gap: 1rem;
+    margin: .5rem 0;
+}
+
+.contact-info-item p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-info-item span {
+    display: flex;
+    align-items: center;
+}
+
+.contact-info-item a, .contact-info-item a:visited {
+    color: var(--font-color);
+    text-decoration: underline var(--contrast-color);
 }
 
 .form-submitted {
     display: flex;
     flex-direction: column;
-    color: var(--font-color);
-    justify-content: center;
     align-items: center;
-    margin: 3rem;
+    margin: 3rem 0;
 }
-
-@media screen and (min-width: 768px) {
-    .contact-content h4 {
-        font-size: 1.3em;
-    }
-
-    #name, #email, #message {
-        width: 350px;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .contact-content h4 {
-        font-size: 1.4em;
-    }
-
-    #name, #email, #message {
-        width: 450px;
-    }
-}
-
-
-  
