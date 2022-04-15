@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;600;700;900&display=swap');
 
 :root {
-    --background-color: #060B10;
+    --background-color: #062845;
     --font-color: #C8CCD9;
-    --contrast-color: #7293B4;
-    --secondary-color: #5F6D99;
+    --contrast-color: #47ABE0;
+    --secondary-color: #2873BB;
 
     --font-family: 'Titillium Web', sans-serif;
 }
