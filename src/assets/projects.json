@@ -27,7 +27,7 @@
         {
             "name": "Space Tourism",
             "tools": "React, JSON, Prettier",
-            "description": "Space Tourism is a fully responsive website about a space trip for tourists. Relying on JSON data for most of the content, Space Tourism's design was converted from a Figma file.",
+            "description": "Space Tourism is a fully responsive website converted from a design provided by FrontendMentor.io. This website's content is rendered from a JSON file.",
             "desktop": "https://i.imgur.com/X5Crw7J.png",
             "mobile": "https://i.imgur.com/soO0NhH.png",
             "links": 
