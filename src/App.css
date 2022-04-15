@@ -5,3 +5,19 @@
     background: var(--background-color);
     font-family: var(--font-family);
 }
+
+.blue__button {
+    border-radius: 8px;
+    border: solid 2px var(--contrast-color);
+    padding: 5px 15px;
+    font-weight: bold;
+    color: var(--font-color)
+}
+
+.white__button {
+    border-radius: 8px;
+    border: solid 2px var(--font-color);
+    padding: 5px 15px;
+    font-weight: bold;
+    color: var(--contrast-color);
+}
