@@ -22,6 +22,7 @@ const About = () => {
           <p>
             I'm interested in creating responsive and accessible front-end web applications.
           </p>
+      </div>
         <div className="about-skills">
           <p className='about-skills-header'>
             Here are a few of my skills / technologies
@@ -44,7 +45,6 @@ const About = () => {
             <a href=''>DOWNLOAD CV</a>
           </div>
         </div>
-      </div>
     </div>
   )
 }

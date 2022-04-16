@@ -23,7 +23,7 @@
     color: var(--contrast-color);
 }
 
-.about-content p {
+.about-content p, .about-skills p {
     font-size: 1.1em;
     margin: 5px 0;
 }
@@ -36,7 +36,7 @@
     display: flex;
     flex-direction: column;
 
-    margin: 3rem 0;
+    margin: 3rem 1rem;
     margin-bottom: 1.5rem;
 }
 
@@ -64,9 +64,122 @@
     display: flex;
     flex-direction: row;
     gap: 1.5rem;
+    margin: 0 1rem;
 }
 
 .about-contact a, .about-contact a:visited, .about-cv a, .about-cv a:visited {
     color: inherit;
     text-decoration: none;
+}
+
+/* @media screen and (min-width: 481px) {
+    .about-content h4 {
+        font-size: 1.4em;
+    }
+
+    .about-content p, .about-skills p {
+        font-size: 1.2em;
+    }
+
+    .about-skills-grid {
+        gap: 8px;
+    }
+} */
+
+@media screen and (min-width: 769px) {
+    .about-content h4 {
+        font-size: 1.45em;
+        padding: .75rem 0;
+    }
+
+    .about-content p .about-skills p {
+        font-size: 1.25em;
+        margin: 7.5px 0;
+    }
+
+    .about-image {
+        margin: 1rem 2rem;
+    }
+
+    .about-content {
+        margin: 2rem 2rem;
+    }
+
+    .about-skills {
+        margin: 3rem 2rem;
+    }
+
+    .about-more {
+        margin: 0rem 2rem;
+    }
+
+    .about-skills-grid {
+        gap: 8px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .about-main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about-image {
+        width: 90%;
+    }
+
+    .about-content {
+        justify-content: flex-end;
+    }
+
+    .about-content h4 {
+        font-size: 1.5em;
+        padding: .8rem 0;
+    }
+
+    .about-content p, .about-skills p {
+        font-size: 1.3em;
+        margin: 8px 0;
+    }
+
+    .about-skills, .about-more {
+        grid-column: span 2;
+    }
+
+    .about-skills {
+        margin: 3rem 2rem;
+    }
+
+    .about-more {
+        margin: 0 2rem;
+    }
+
+}
+
+@media screen and (min-width: 1201px) {
+    .about-content h4 {
+        font-size: 1.6em;
+    }
+
+    .about-content p, .about-skills p {
+        font-size: 1.4em;
+    }
+    
+    .about-image {
+        grid-row: span 3;
+    }
+
+    .about-skills {
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+        margin: 3rem 2rem;
+        justify-content: flex-end;
+    }
+
+    .about-more {
+        grid-column: 2 / 3;
+        justify-content: flex-start;
+        margin: 0 2rem;
+        height: fit-content;
+    }
 }
