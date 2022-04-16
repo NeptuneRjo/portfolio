@@ -25,6 +25,18 @@
                 }
         },
         {
+            "name": "WeatherJS",
+            "tools": "React, OpenWeather API",
+            "description": "WeatherJS is a weather app that displays the current weather of a location. Data is provided by OpenWeather's API. Tested with Jest and React Testing Library to ensure maximum code confidence.",
+            "desktop": "https://i.imgur.com/CqIVYwu.png",
+            "mobile": "https://i.imgur.com/i7NYfOc.png",
+            "links": 
+                {
+                    "github": "https://github.com/NeptuneRjo/weatherjs",
+                    "live": "https://neptunerjo.github.io/weatherjs/"
+                }
+        },
+        {
             "name": "Space Tourism",
             "tools": "React, JSON, Prettier",
             "description": "Space Tourism is a fully responsive website converted from a design provided by FrontendMentor.io. This website's content is rendered from a JSON file.",
@@ -36,5 +48,6 @@
                     "live": "https://neptunerjo.github.io/space-tourism/"
                 }
         }
+        
     ]
 }
