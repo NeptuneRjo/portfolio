@@ -1,5 +1,5 @@
 .nav-main {
-  z-index: 1;
+  z-index: 2;
   width: 100%;
   height: 50%;
   background: transparent;
@@ -36,12 +36,15 @@
   flex-direction: column;
 
   position: absolute;
-  top: 3rem;
+  top: 0;
+  right: 0;
   padding: 1rem;
-  background: transparent;
+  height: 100vh;
+  width: 60%;
+  padding-top: 40px;
 
-  -webkit-animation: scale-up-ver-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	animation: scale-up-ver-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .nav-mobile-item, p, a {
@@ -61,33 +64,66 @@
 
 .nav-mobile svg {
   background: transparent;
+  z-index: 3;
 }
 
-@-webkit-keyframes scale-up-ver-top {
-  0% {
-    -webkit-transform: scaleY(0.4);
-            transform: scaleY(0.4);
-    -webkit-transform-origin: 100% 0%;
-            transform-origin: 100% 0%;
+@-webkit-keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(100px);
+              transform: translateX(100px);
+    }
+    100% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
   }
-  100% {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
-    -webkit-transform-origin: 100% 0%;
-            transform-origin: 100% 0%;
+  @keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(100px);
+              transform: translateX(100px);
+    }
+    100% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+  }
+
+@media screen and (min-width: 769px) {
+  .nav-mobile {
+    display: none;
+  }
+
+  .nav-desktop {
+    display: flex;
+    background: transparent;
+    padding: 1rem 2rem;
+  }
+
+  .nav-desktop-items {
+    display: flex;
+    background: transparent;
+    gap: 2rem;
+  }
+
+  .nav-desktop-item {
+    background: transparent;
+    font-size: 1.1em;
+  }
+
+  .nav-desktop-item a, .nav-desktop-item a:visited {
+    text-decoration: none;
+    color: var(--font-color);
   }
 }
-@keyframes scale-up-ver-top {
-  0% {
-    -webkit-transform: scaleY(0.4);
-            transform: scaleY(0.4);
-    -webkit-transform-origin: 100% 0%;
-            transform-origin: 100% 0%;
+
+@media screen and (min-width: 1025px) {
+  .nav-desktop-item {
+    font-size: 1.2em;
   }
-  100% {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
-    -webkit-transform-origin: 100% 0%;
-            transform-origin: 100% 0%;
+}
+
+@media screen and (min-width: 1201px) {
+  .nav-desktop-item {
+    font-size: 1.3em;
   }
 }

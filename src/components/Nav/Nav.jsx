@@ -13,6 +13,14 @@ const Nav = () => {
 
   const [toggleMenu, setToggleMenu] = useState(false);
 
+  const disableScroll = () => {
+    document.body.style.overflow = "hidden"
+  }
+  
+  const enableScroll = () => {
+    document.body.style.overflow = "visible"
+  }
+
   return (
     <div className="nav-main">
       <Logo />
@@ -36,12 +44,18 @@ const Nav = () => {
           ? <RiCloseLine 
               color='#C8CCD9' 
               size={27} 
-              onClick={() => setToggleMenu(false)}
+              onClick={() => {
+                setToggleMenu(false);
+                enableScroll();
+              }}
             />
           : <RiMenu3Line
               color='#C8CCD9'
               size={27}
-              onClick={() => setToggleMenu(true)}
+              onClick={() => {
+                setToggleMenu(true);
+                disableScroll();
+              }}
             />            
         }
       </div>
