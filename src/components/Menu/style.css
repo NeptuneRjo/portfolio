@@ -1,5 +1,5 @@
 .menu-content {
-    z-index: 1;
+    z-index: 2;
     width: 100%;
     color: white;
     height: 40px;
@@ -28,24 +28,28 @@
 .menu-mobile svg {
     background: transparent;
     padding-right: 1rem;
+    z-index: 3;
 }
 
 .menu-mobile-items.false {
     display: none;
-}
+} 
 
 .menu-mobile-items.true {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
 
     position: absolute;
     top: 40px;
+    height: 100vh;
+    width: 60%;
 
     padding: 1rem;
     background: var(--background-color);
-
-	-webkit-animation: scale-up-ver-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	animation: scale-up-ver-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    
+    -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .menu-mobile-item {
@@ -100,4 +104,66 @@
     }
   }
 
+@-webkit-keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(100px);
+              transform: translateX(100px);
+    }
+    100% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+  }
+  @keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(100px);
+              transform: translateX(100px);
+    }
+    100% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+  }
+
+@media screen and (min-width: 481px) {
+    .menu-content {
+        height: 50px;
+    }
+}
   
+@media screen and (min-width: 769px) {
+    .menu-mobile {
+        display: none;
+    }
+
+    .menu-desktop {
+        display: flex;
+        padding-right: 2rem;
+        gap: 2rem;
+    }
+
+    .menu-desktop-item {
+        font-size: 1.1em;
+    }
+
+    .menu-desktop-item a, .menu-desktop-item a:visited {
+        color: var(--font-color);
+        text-decoration: none;
+    }
+
+    .menu-desktop-item a:hover {
+        text-decoration: underline var(--contrast-color);
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .menu-desktop-item {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    .menu-desktop-item {
+        font-size: 1.3em;
+    }
+}

@@ -36,45 +36,95 @@ const Menu = () => {
     menuClasses.push('scrolled')
   }
 
+  const disableScroll = () => {
+    document.body.style.overflow = "hidden"
+  }
+  
+  const enableScroll = () => {
+    document.body.style.overflow = "visible"
+  }
+
   return (
     <Scroll
       render={({ x, y }) => (
         <div>
           {
-            y >= 460 &&
+            y >= 625 &&
             <div className={`menu-content ${menuClasses.join(' ')}`}>
               <Logo />
-              <div className="menu-desktop"></div>
+              <div className="menu-desktop">
+                <div className="menu-desktop-item">
+                  <p>
+                    <a href='#about'>
+                      About
+                    </a>
+                  </p>
+                </div>
+                <div className="menu-desktop-item">
+                  <p>
+                    <a href='#projects'>
+                        Projects
+                    </a>
+                  </p>
+                </div>
+                <div className="menu-desktop-item">
+                  <p>
+                    <a href='#contact'>
+                        Contact
+                    </a>
+                  </p>
+                </div>
+              </div>
               <div className="menu-mobile">
                 {toggleMenu
                   ? <RiCloseLine 
                       color='#47ABE0' 
                       size={27} 
-                      onClick={() => setToggleMenu(false)}
+                      onClick={() => {
+                        setToggleMenu(false); 
+                        enableScroll();
+                      }}
                     />
                   : <RiMenu3Line
                       color='#47ABE0'
                       size={27}
-                      onClick={() => setToggleMenu(true)}
+                      onClick={() => {
+                        setToggleMenu(true); 
+                        disableScroll();
+                      }}
                     />            
                 }
-                <div className={`menu-mobile-items ${toggleMenu}`}>
+                <div className={`menu-mobile-items ${toggleMenu}`} >
                   <div className="menu-mobile-item">
                     <p>
-                      <a href='#about' onClick={() => setToggleMenu(false)}>
+                      <a 
+                        href='#about' 
+                        onClick={() => {
+                          setToggleMenu(false); enableScroll()}}
+                      >
                         About
                       </a>
                     </p>
                   </div>
                   <div className="menu-mobile-item">
                     <p>
-                      <a href='#projects' onClick={() => setToggleMenu(false)}>Projects
+                      <a 
+                        href='#projects' 
+                        onClick={() => {
+                          setToggleMenu(false); enableScroll()}}
+                        >
+                          Projects
                       </a>
                     </p>
                   </div>
                   <div className="menu-mobile-item">
                     <p>
-                      <a href='#contact' onClick={() => setToggleMenu(false)}>Contact
+                      <a 
+                        href='#contact' 
+                        onClick={() => {
+                          setToggleMenu(false); enableScroll()}}
+                        >
+                          Contact
                       </a>
                     </p>
                   </div>
