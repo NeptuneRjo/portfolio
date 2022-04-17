@@ -40,7 +40,7 @@ const Hero = () => {
               data-aos='fade-up' 
               data-aos-easing="ease-in-out" 
               data-aos-duration="800"
-            >A <span>Front-end</span> Developer</h4>
+            >I'm a <span>Front-end</span> Developer.</h4>
         </div>
       </ParallaxBanner>
     </div>
