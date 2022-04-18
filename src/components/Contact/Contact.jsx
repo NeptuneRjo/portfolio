@@ -12,6 +12,7 @@ const Contact = () => {
   const FORM_ENDPOINT = 'https://public.herotofu.com/v1/5696b210-b5d9-11ec-b4fe-2b9cbf782176';
 
   const [submitted, setSubmitted] = useState(false);
+
   const handleSubmit = () => {
     setTimeout(() => {
       setSubmitted(true);
@@ -19,11 +20,11 @@ const Contact = () => {
   }
   
   return (
-    <div className="contact-main" id='contact'>
+    <div className="contact-main" id='contact' data-testid='contact'>
       <div className="contact-content">
-        <h4>Contact Me</h4>
+        <h4 data-testid='contact-header'>Contact Me</h4>
         {submitted && (
-          <div className='form-submitted'>
+          <div className='form-submitted' data-testid='form-submitted'>
             <h4>Thank you!</h4>
             <p>We'll be in touch soon.</p>
           </div>
@@ -42,6 +43,7 @@ const Contact = () => {
                 name="name" 
                 id='name'
                 required
+                data-testid='name-field'
               />
             </div>
             <div className='contact-form-item'>
@@ -50,6 +52,7 @@ const Contact = () => {
                 type="email" 
                 name="email"
                 id='email'
+                data-testid='email-field'
                 required  
               />
             </div>
@@ -59,6 +62,7 @@ const Contact = () => {
                 name="message"
                 id='message'
                 required
+                data-testid='message-field'
               />
             </div>
             <div>
@@ -66,13 +70,19 @@ const Contact = () => {
                 type="submit" 
                 id='submit' 
                 className='blue__button'
-                > Send message </button>
+                data-testid='submit-button'
+              > 
+                Send message 
+              </button>
             </div>
           </form>
         )}
           <div className="contact-info">
             <h4>Contact Info</h4>
-            <div className="contact-info-content">
+            <div 
+              className="contact-info-content" 
+              data-testid='contact-info'
+            >
               <div className="contact-email contact-info-item">
                 <span><RiMailFill color='#47ABE0'/></span>
                 <p>rjo9000@outlook.com</p>
