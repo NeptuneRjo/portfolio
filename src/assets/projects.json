@@ -5,7 +5,6 @@
             "tools": "React, Redux, Millify, RapidAPI",
             "description": "Cryptoverse is a fully responsive, dynamic web application that uses multiple APIs to create a real-time database of cryptocurrencies and crypto-related news.",
             "desktop": "https://i.imgur.com/SIdKex7.png",
-            "mobile": "https://i.imgur.com/DBTjPdR.png",
             "links": 
                 {
                     "github": "https://github.com/NeptuneRjo/cryptoverse",
@@ -17,7 +16,6 @@
             "tools": "React, CommerceJS API, MaterialUI",
             "description": "ECommerce is a web store that utilizes CommerceJS's API service to supply products to the storefront. Completely responsive, and the product page can be changed through CommerceJS.",
             "desktop": "https://i.imgur.com/vRNXmbd.png",
-            "mobile": "https://i.imgur.com/TedapRw.png",
             "links": 
                 {
                     "github": "https://github.com/NeptuneRjo/e-commerce",
@@ -29,7 +27,6 @@
             "tools": "React, OpenWeather API",
             "description": "WeatherJS is a weather app that displays the current weather of a location. Data is provided by OpenWeather's API. Tested with Jest and React Testing Library to ensure maximum code confidence.",
             "desktop": "https://i.imgur.com/CqIVYwu.png",
-            "mobile": "https://i.imgur.com/i7NYfOc.png",
             "links": 
                 {
                     "github": "https://github.com/NeptuneRjo/weatherjs",
@@ -41,7 +38,6 @@
             "tools": "React, JSON, Prettier",
             "description": "Space Tourism is a fully responsive website converted from a design provided by FrontendMentor.io. This website's content is rendered from a JSON file.",
             "desktop": "https://i.imgur.com/X5Crw7J.png",
-            "mobile": "https://i.imgur.com/soO0NhH.png",
             "links": 
                 {
                     "github": "https://github.com/NeptuneRjo/space-tourism",
