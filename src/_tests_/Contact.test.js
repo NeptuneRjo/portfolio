@@ -1,6 +1,5 @@
 import { render, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom'
-import React from "react";
 
 import Contact from '../components/Contact/Contact';
 
