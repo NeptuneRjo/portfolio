@@ -9,7 +9,7 @@ import {
 
 const Contact = () => {
 
-  const FORM_ENDPOINT = 'https://public.herotofu.com/v1/5696b210-b5d9-11ec-b4fe-2b9cbf782176';
+  const FORM_ENDPOINT = 'https://usebasin.com/f/25fae67153dc'
 
   const [submitted, setSubmitted] = useState(false);
 
@@ -35,6 +35,7 @@ const Contact = () => {
           onSubmit={handleSubmit}
           method="POST"
           target='_blank'
+          enctype="multipart/form-data"
           >
             <div className='contact-form-item'>
               <label for='name'>Your Name</label>
