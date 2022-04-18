@@ -35,11 +35,6 @@ const Projects = () => {
                   alt='projects desktop view' 
                   className='projects-desktop' 
                 />
-                <img 
-                  src={project.mobile} 
-                  className='projects-mobile' 
-                  alt='projects mobile view'
-                />
               </div>
               <div className="projects-links">
                 <div className="projects-github blue__button">
