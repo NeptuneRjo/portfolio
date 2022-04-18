@@ -10,13 +10,18 @@ const About = () => {
   return (
     <div className="about-main" id="about">
       <div className="about-image-container">
-        <img src={aboutHero} alt='image of space' className='about-image' />
+        <img 
+          src={aboutHero} 
+          alt='image of space' 
+          className='about-image' 
+          data-testid='about-image' 
+        />
         <div className="about-image-tags">
           Photo by <a href="https://unsplash.com/@nicolescapturedmoments?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target='_blank'>Nicole Avagliano</a> on <a href="https://unsplash.com/s/photos/space-background?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target='_blank'>Unsplash</a>
         </div>
       </div>
-      <div className="about-content">
-        <h4>About Me</h4>
+      <div className="about-content" data-testid='about-content'>
+        <h4 data-testid='about-header'>About Me</h4>
           <p>
             Hello! 
           </p>
@@ -28,14 +33,14 @@ const About = () => {
             I'm interested in creating responsive and accessible front-end web applications.
           </p>
       </div>
-        <div className="about-skills">
+        <div className="about-skills" data-testid='about-skills'>
           <p className='about-skills-header'>
             Here are a few of my skills / technologies
           </p>
           <div className="about-skills-grid">
             {
               skills.map((skill, index) => (
-                <div className="about-skill-item">
+                <div className="about-skill-item" data-testid='skill-item'>
                   <p>{skill}</p>
                 </div>
               ))
@@ -43,11 +48,8 @@ const About = () => {
           </div>
         </div>
         <div className="about-more">
-          <div className="about-contact blue__button">
-            <a href="#contact">HIRE ME</a>
-          </div>
-          <div className="about-cv white__button">
-            <a href=''>DOWNLOAD CV</a>
+          <div className="about-contact blue__button" >
+            <a href="#contact" data-testid='hire-button'>HIRE ME</a>
           </div>
         </div>
     </div>
