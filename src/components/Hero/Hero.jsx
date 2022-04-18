@@ -13,21 +13,15 @@ import './style.css';
 
 const Hero = () => {
 
-  const [loaded, setLoaded] = useState(false);
-
   useEffect(() => {
     Aos.init();
   }, [])
 
   return (
-    <div className="header-main">
-      {loaded ? false : (
-        <div className='image-loading' />
-      )}
+    <div className="header-main" data-testid='hero-component'>
       <ParallaxBanner
         className="header-content aspect-[2/1]" 
-        layers={[{image: `${heroImage}`, speed: -27}]}
-        onLoad={() => setLoaded(true)}
+        layers={[{image: 'https://i.imgur.com/BH5wEA2.jpg', speed: -27}]}
       >
         <Nav />
         <div className="header-text" >
@@ -35,11 +29,13 @@ const Hero = () => {
               data-aos='fade-up' 
               data-aos-easing="ease-in-out" 
               data-aos-duration="800"
+              data-testid='hero-header-name'
             >I'm Ryan O'Connell</h4>
             <h4 
               data-aos='fade-up' 
               data-aos-easing="ease-in-out" 
               data-aos-duration="800"
+              data-testid='hero-header-content'
             >A <span>Front-end</span> Developer.</h4>
         </div>
         <div className="header-tag">
