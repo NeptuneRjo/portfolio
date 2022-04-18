@@ -6,8 +6,21 @@
     color: var(--font-color);
 }
 
-.about-image {
+.about-image-container {
     margin: 1rem;
+}
+
+.about-image {
+    width: 100%;
+}
+
+.about-image-tags {
+    text-align: center;
+}
+
+.about-image-tags a, .about-image-tags a:visited {
+    text-decoration: none;
+    color: var(--contrast-color);
 }
 
 .about-content {
@@ -83,7 +96,7 @@
         margin: 7.5px 0;
     }
 
-    .about-image {
+    .about-image-container {
         margin: 1rem 2rem;
     }
 
@@ -110,7 +123,7 @@
         grid-template-columns: 1fr 1fr;
     }
 
-    .about-image {
+    .about-image-container {
         width: 90%;
     }
 
@@ -151,7 +164,7 @@
         font-size: 1.4em;
     }
     
-    .about-image {
+    .about-image-container {
         grid-row: span 3;
     }
 

@@ -36,6 +36,17 @@
     z-index: 1;
 }
 
+.header-tag {
+    z-index: 1;
+    margin-top: 15rem;
+    background: transparent;
+}
+
+.header-tag a, .header-tag a:visited {
+    text-decoration: none;
+    color: var(--contrast-color);
+}
+
 @media screen and (min-width: 769px) {
     .header-text {
         font-size: 1.6em;

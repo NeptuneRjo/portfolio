@@ -42,6 +42,9 @@ const Hero = () => {
               data-aos-duration="800"
             >A <span>Front-end</span> Developer.</h4>
         </div>
+        <div className="header-tag">
+          Photo by <a href="https://unsplash.com/@laup?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Paul Volkmer</a> on <a href="https://unsplash.com/s/photos/space-background?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        </div>
       </ParallaxBanner>
     </div>
   )
