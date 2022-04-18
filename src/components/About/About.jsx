@@ -12,7 +12,7 @@ const About = () => {
       <div className="about-image-container">
         <img src={aboutHero} alt='image of space' className='about-image' />
         <div className="about-image-tags">
-          Photo by <a href="https://unsplash.com/@nicolescapturedmoments?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nicole Avagliano</a> on <a href="https://unsplash.com/s/photos/space-background?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+          Photo by <a href="https://unsplash.com/@nicolescapturedmoments?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target='_blank'>Nicole Avagliano</a> on <a href="https://unsplash.com/s/photos/space-background?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target='_blank'>Unsplash</a>
         </div>
       </div>
       <div className="about-content">

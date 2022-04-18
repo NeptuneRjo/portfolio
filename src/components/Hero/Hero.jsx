@@ -43,7 +43,7 @@ const Hero = () => {
             >A <span>Front-end</span> Developer.</h4>
         </div>
         <div className="header-tag">
-          Photo by <a href="https://unsplash.com/@laup?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Paul Volkmer</a> on <a href="https://unsplash.com/s/photos/space-background?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+          Photo by <a href="https://unsplash.com/@laup?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target='_blank'>Paul Volkmer</a> on <a href="https://unsplash.com/s/photos/space-background?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target='_blank'>Unsplash</a>
         </div>
       </ParallaxBanner>
     </div>
