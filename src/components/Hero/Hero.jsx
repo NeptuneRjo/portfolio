@@ -38,8 +38,8 @@ const Hero = () => {
               data-testid='hero-header-content'
             >A <span>Front-end</span> Developer.</h4>
         </div>
-        <div className="header-tag">
-          Photo by <a href="https://unsplash.com/@laup?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target='_blank'>Paul Volkmer</a> on <a href="https://unsplash.com/s/photos/space-background?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target='_blank'>Unsplash</a>
+        <div className="header-tag" data-testid='header-tag'>
+          Photo by <a href="https://unsplash.com/@laup?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target='_blank' data-testid='header-tag-name'>Paul Volkmer</a> on <a href="https://unsplash.com/s/photos/space-background?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target='_blank' data-testid='header-tag-website'>Unsplash</a>
         </div>
       </ParallaxBanner>
     </div>
