@@ -47,10 +47,13 @@ const Menu = () => {
   return (
     <Scroll
       render={({ x, y }) => (
-        <div>
+        <div data-testid='menu-main' className='menu-main'>
           {
             y >= 625 &&
-            <div className={`menu-content ${menuClasses.join(' ')}`}>
+            <div 
+              className={`menu-content ${menuClasses.join(' ')}`}
+              data-testid='menu-content'
+            >
               <Logo />
               <div className="menu-desktop">
                 <div className="menu-desktop-item">
@@ -84,6 +87,7 @@ const Menu = () => {
                         setToggleMenu(false); 
                         enableScroll();
                       }}
+                      className='close-icon-menu'
                     />
                   : <RiMenu3Line
                       color='#47ABE0'
@@ -92,6 +96,7 @@ const Menu = () => {
                         setToggleMenu(true); 
                         disableScroll();
                       }}
+                      className='3-line-icon-menu'
                     />            
                 }
                 <div className={`menu-mobile-items ${toggleMenu}`} >
