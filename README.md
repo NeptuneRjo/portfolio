@@ -35,7 +35,7 @@ Tested with `Jest`, `Cypress`, and `React-Testing-Library`.
 
 ### To use the Cypress testing suite:
 - Follow the Setup steps above (make sure you are using localhost:3000)
-- run npm run cypress:open
+- run `npm run cypress:open`
 - when the cypress window opens, double click any of the testing files to begin the tests
 
 
