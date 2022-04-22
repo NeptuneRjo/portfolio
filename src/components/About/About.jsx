@@ -21,7 +21,12 @@ const About = () => {
         </div>
       </div>
       <div className="about-content" data-testid='about-content'>
-        <h4 data-testid='about-header'>About Me</h4>
+        <h4 
+          data-testid='about-header' 
+          className='about-header'
+        >
+          About Me
+        </h4>
           <p>
             Hello! 
           </p>
