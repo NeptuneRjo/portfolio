@@ -1,12 +1,11 @@
 import React from 'react';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
 import { ParallaxBanner } from 'react-scroll-parallax';
 
-import heroImage from '../../assets/hero.jpg';
 import Nav from '../Nav/Nav';
 
 import './style.css';

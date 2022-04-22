@@ -1,8 +1,6 @@
 import React from 'react';
 import './style.css';
 
-import aboutHero from '../../assets/about.jpg'
-
 const About = () => {
 
   const skills = ['React', 'Redux', 'CSS3', 'HTML5', 'Jest', 'Sass']
@@ -11,7 +9,7 @@ const About = () => {
     <div className="about-main" id="about">
       <div className="about-image-container">
         <img 
-          src={aboutHero} 
+          src='https://i.imgur.com/nCUx4VC.jpg'
           alt='image of space' 
           className='about-image' 
           data-testid='about-image' 
