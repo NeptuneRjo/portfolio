@@ -1,7 +1,7 @@
 
 describe('Menu', () => {
     beforeEach(() => {
-        cy.visit('https://neptunerjo.github.io/portfolio').scrollTo(0, 625)
+        cy.visit('http://localhost:3000/').scrollTo(0, 625)
     })
 
     it('renders the Menu when the correct y is reached', () => {

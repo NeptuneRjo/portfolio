@@ -1,7 +1,7 @@
 
 describe('Nav', () => {
     beforeEach(() => {
-        cy.visit('https://neptunerjo.github.io/portfolio')
+        cy.visit('http://localhost:3000/')
     })
 
     it('renders the nav', () => {
