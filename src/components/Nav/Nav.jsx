@@ -62,20 +62,31 @@ const Nav = () => {
       <div className={`nav-mobile-items ${toggleMenu}`}>
         <div className="nav-mobile-item">
           <p>
-            <a href='#about' onClick={() => setToggleMenu(false)}>
+            <a 
+              href='#about' 
+              onClick={() => {setToggleMenu(false); enableScroll()}}
+            >
               About
             </a>
           </p>
         </div>
         <div className="nav-mobile-item">
           <p>
-            <a href='#projects' onClick={() => setToggleMenu(false)}>Projects
+            <a 
+              href='#projects' 
+              onClick={() => {setToggleMenu(false); enableScroll()}}
+            >
+              Projects
             </a>
           </p>
         </div>
         <div className="nav-mobile-item">
           <p>
-            <a href='#contact' onClick={() => setToggleMenu(false)}>Contact
+            <a 
+              href='#contact' 
+              onClick={() => {setToggleMenu(false); enableScroll()}}
+            >
+              Contact
             </a>
           </p>
         </div>
