@@ -19,7 +19,7 @@ This is my portfolio website.
 
 ## Screenshots
 
-![Desktop Home Page]('https://i.imgur.com/dS9E1VE.png')
+![Desktop Home Page](https://i.imgur.com/dS9E1VE.png)
 
 ## Technologies
 
