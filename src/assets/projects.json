@@ -3,8 +3,8 @@
         {
             "name": "Cryptoverse",
             "tools": "React, Redux, Millify, RapidAPI",
-            "description": "Cryptoverse is a fully responsive, dynamic web application that uses multiple APIs to create a real-time database of cryptocurrencies and crypto-related news.",
-            "desktop": "https://i.imgur.com/SIdKex7.png",
+            "description": "Cryptoverse is a fully responsive, dynamic web application that uses APIs to create a real-time database of cryptocurrencies.",
+            "desktop": "https://i.imgur.com/RAUz4Sk.png",
             "links": 
                 {
                     "github": "https://github.com/NeptuneRjo/cryptoverse",
